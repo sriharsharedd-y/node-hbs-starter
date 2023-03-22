@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="/styles.css">
+<html>
+<head>
+    <title>{{title}}</title>
+</head>
+<body>
+    <h1>{{heading}}</h1>
+    <div class={{className}}>
+        <ul>
+            {{#each items}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        {{#if pageLink}}<a class="button" href={{pageLink}}>{{linkText}}</a>{{/if}}
+    </div>
+</body>
+</html>
